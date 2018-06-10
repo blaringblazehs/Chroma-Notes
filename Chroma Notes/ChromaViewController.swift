@@ -12,9 +12,14 @@ class ChromaViewController: UITableViewController {
 
     var itemArray = ["First","Second","Thired"]
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let items = defaults.array(forKey: "toDoListArray") as? [String] {
+            itemArray = items
+        }
 
     }
     
@@ -56,7 +61,7 @@ class ChromaViewController: UITableViewController {
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             // What will happen once the user clicks the Add Item Button on our UIAlert
             self.itemArray.append(textField.text!)
-            
+            self.defaults.set(self.itemArray, forKey: "toDoListArray")
             self.tableView.reloadData()
             
         }
