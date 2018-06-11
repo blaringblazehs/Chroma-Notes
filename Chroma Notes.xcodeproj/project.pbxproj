@@ -12,6 +12,7 @@
 		4081B3F920CD9B3900ECE3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4081B3F720CD9B3900ECE3BB /* Main.storyboard */; };
 		4081B3FB20CD9B3B00ECE3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4081B3FA20CD9B3B00ECE3BB /* Assets.xcassets */; };
 		4081B3FE20CD9B3B00ECE3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4081B3FC20CD9B3B00ECE3BB /* LaunchScreen.storyboard */; };
+		4081B40620CE54F100ECE3BB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081B40520CE54F100ECE3BB /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4081B3FA20CD9B3B00ECE3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4081B3FD20CD9B3B00ECE3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4081B3FF20CD9B3B00ECE3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4081B40520CE54F100ECE3BB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				4081B3F320CD9B3900ECE3BB /* AppDelegate.swift */,
-				4081B3F520CD9B3900ECE3BB /* ChromaViewController.swift */,
-				4081B3F720CD9B3900ECE3BB /* Main.storyboard */,
-				4081B3FA20CD9B3B00ECE3BB /* Assets.xcassets */,
-				4081B3FC20CD9B3B00ECE3BB /* LaunchScreen.storyboard */,
+				4081B40820CE550A00ECE3BB /* Controller */,
+				4081B40720CE54F900ECE3BB /* Data Model */,
+				4081B40920CE552200ECE3BB /* View */,
+				4081B40A20CE553F00ECE3BB /* Supporting Files */,
 				4081B3FF20CD9B3B00ECE3BB /* Info.plist */,
 			);
 			path = "Chroma Notes";
+			sourceTree = "<group>";
+		};
+		4081B40720CE54F900ECE3BB /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				4081B40520CE54F100ECE3BB /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		4081B40820CE550A00ECE3BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4081B3F520CD9B3900ECE3BB /* ChromaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4081B40920CE552200ECE3BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4081B3F720CD9B3900ECE3BB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4081B40A20CE553F00ECE3BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4081B3FA20CD9B3B00ECE3BB /* Assets.xcassets */,
+				4081B3FC20CD9B3B00ECE3BB /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4081B3F620CD9B3900ECE3BB /* ChromaViewController.swift in Sources */,
+				4081B40620CE54F100ECE3BB /* Item.swift in Sources */,
 				4081B3F420CD9B3900ECE3BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
