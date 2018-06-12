@@ -12,8 +12,10 @@
 		4081B3F920CD9B3900ECE3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4081B3F720CD9B3900ECE3BB /* Main.storyboard */; };
 		4081B3FB20CD9B3B00ECE3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4081B3FA20CD9B3B00ECE3BB /* Assets.xcassets */; };
 		4081B3FE20CD9B3B00ECE3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4081B3FC20CD9B3B00ECE3BB /* LaunchScreen.storyboard */; };
-		4081B42E20CFAE0C00ECE3BB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4081B42C20CFAE0C00ECE3BB /* DataModel.xcdatamodeld */; };
 		40D256AB20CFF4B60092BD29 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D256AA20CFF4B60092BD29 /* CategoryViewController.swift */; };
+		40D256AF20D03B120092BD29 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D256AE20D03B120092BD29 /* Item.swift */; };
+		40D256B120D03B220092BD29 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D256B020D03B220092BD29 /* Category.swift */; };
+		414E940048438BCEF7BE8D41 /* Pods_Chroma_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8936AD7AEB2811C7E4A8B84 /* Pods_Chroma_Notes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,12 @@
 		4081B3FA20CD9B3B00ECE3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4081B3FD20CD9B3B00ECE3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4081B3FF20CD9B3B00ECE3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4081B42D20CFAE0C00ECE3BB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		40D256AA20CFF4B60092BD29 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		40D256AE20D03B120092BD29 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		40D256B020D03B220092BD29 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BFBDEA0B6F3111D6118DCB3D /* Pods-Chroma Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chroma Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chroma Notes/Pods-Chroma Notes.release.xcconfig"; sourceTree = "<group>"; };
+		C0177CA8D77B38EB67FE44A7 /* Pods-Chroma Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chroma Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chroma Notes/Pods-Chroma Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		D8936AD7AEB2811C7E4A8B84 /* Pods_Chroma_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chroma_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414E940048438BCEF7BE8D41 /* Pods_Chroma_Notes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				4081B3F220CD9B3900ECE3BB /* Chroma Notes */,
 				4081B3F120CD9B3900ECE3BB /* Products */,
+				B23582B07D8C787EA3922D0A /* Pods */,
+				4A2437A5D26E1C40732D700C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +80,8 @@
 		4081B40720CE54F900ECE3BB /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				4081B42C20CFAE0C00ECE3BB /* DataModel.xcdatamodeld */,
+				40D256B020D03B220092BD29 /* Category.swift */,
+				40D256AE20D03B120092BD29 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -102,6 +112,23 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4A2437A5D26E1C40732D700C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8936AD7AEB2811C7E4A8B84 /* Pods_Chroma_Notes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B23582B07D8C787EA3922D0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0177CA8D77B38EB67FE44A7 /* Pods-Chroma Notes.debug.xcconfig */,
+				BFBDEA0B6F3111D6118DCB3D /* Pods-Chroma Notes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4081B40220CD9B3B00ECE3BB /* Build configuration list for PBXNativeTarget "Chroma Notes" */;
 			buildPhases = (
+				42B3A548F5BFF77A57E639DB /* [CP] Check Pods Manifest.lock */,
 				4081B3EC20CD9B3900ECE3BB /* Sources */,
 				4081B3ED20CD9B3900ECE3BB /* Frameworks */,
 				4081B3EE20CD9B3900ECE3BB /* Resources */,
+				73415574D20FC72C5949A903 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,15 +197,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42B3A548F5BFF77A57E639DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chroma Notes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73415574D20FC72C5949A903 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chroma Notes/Pods-Chroma Notes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chroma Notes/Pods-Chroma Notes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4081B3EC20CD9B3900ECE3BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D256AF20D03B120092BD29 /* Item.swift in Sources */,
 				40D256AB20CFF4B60092BD29 /* CategoryViewController.swift in Sources */,
 				4081B3F620CD9B3900ECE3BB /* ChromaViewController.swift in Sources */,
-				4081B42E20CFAE0C00ECE3BB /* DataModel.xcdatamodeld in Sources */,
 				4081B3F420CD9B3900ECE3BB /* AppDelegate.swift in Sources */,
+				40D256B120D03B220092BD29 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +389,7 @@
 		};
 		4081B40320CD9B3B00ECE3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0177CA8D77B38EB67FE44A7 /* Pods-Chroma Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -335,6 +407,7 @@
 		};
 		4081B40420CD9B3B00ECE3BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBDEA0B6F3111D6118DCB3D /* Pods-Chroma Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -372,19 +445,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4081B42C20CFAE0C00ECE3BB /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4081B42D20CFAE0C00ECE3BB /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 4081B42D20CFAE0C00ECE3BB /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4081B3E820CD9B3900ECE3BB /* Project object */;
 }
