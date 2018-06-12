@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chroma Notes-->
+        <!--Items-->
         <scene sceneID="was-XG-Znf">
             <objects>
                 <tableViewController id="T2g-qM-Aob" customClass="ChromaViewController" customModule="Chroma_Notes" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="T2g-qM-Aob" id="eoa-5L-o9S"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Chroma Notes" id="2Fp-c5-9dT">
+                    <navigationItem key="navigationItem" title="Items" id="2Fp-c5-9dT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yBN-WX-aK7">
                             <connections>
                                 <action selector="addButtonPressed:" destination="T2g-qM-Aob" id="D4y-lk-KPb"/>
@@ -50,7 +50,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HlY-vl-Ba4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8" y="134.48275862068968"/>
+            <point key="canvasLocation" x="2177" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h9s-FK-c59">
@@ -67,12 +67,51 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="T2g-qM-Aob" kind="relationship" relationship="rootViewController" id="DyS-Fk-iP0"/>
+                        <segue destination="Ppl-b5-nqJ" kind="relationship" relationship="rootViewController" id="5rT-rg-KBE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1MH-Dc-w92" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821.60000000000002" y="134.48275862068968"/>
+            <point key="canvasLocation" x="262" y="134"/>
+        </scene>
+        <!--Chroma Notes-->
+        <scene sceneID="jo7-Xr-0Mv">
+            <objects>
+                <tableViewController id="Ppl-b5-nqJ" customClass="CategoryViewController" customModule="Chroma_Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qVg-WR-xwB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="Wd5-r9-zb1">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wd5-r9-zb1" id="FnX-54-e6Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ppl-b5-nqJ" id="DOY-iM-dIn"/>
+                            <outlet property="delegate" destination="Ppl-b5-nqJ" id="MKS-Nb-kie"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Chroma Notes" id="d7Z-ah-3EK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yxm-N3-tqO">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Ppl-b5-nqJ" id="SaG-Hh-Mem"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="T2g-qM-Aob" kind="show" identifier="goToItems" id="ZAh-0u-d4S"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7N-aA-Kwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="134"/>
         </scene>
     </scenes>
 </document>
